@@ -1,0 +1,13 @@
+First do "tsc --init" command which produces tsconfig.json
+npm init -y (initoalizing a node project)
+
+There will be 2 folders generally one is src(source folder) and dist(distribution folder)
+src folder is like where you write all the source code
+dist folder is like the cod ewhich is served in production
+
+Now in dist folder automaticaly js files are produced when you run ts files in src
+so to do that go to tsconfig.json
+and uncomment the line outDir and mention the output directory
+
+//here Even you run command "tsc index.ts" it wont produce js file in dist folders it produces in same folder
+ but if you run in watch mode it produces "tsc -w"
