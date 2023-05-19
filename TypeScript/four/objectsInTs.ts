@@ -35,4 +35,38 @@ function makeUser(user: User2): User2 {
 
 makeUser({ name: "", email: "", isActive: true });
 
+type User3 = {
+  //ready only variable we can't change it
+  readonly _id: string;
+  name: string;
+  email: string;
+  isActive: boolean;
+  creditCardDetails?: number;
+  //here ? syntax means it is optional
+};
+
+let myuser2: User3 = {
+  _id: "12345",
+  name: "kiriti",
+  email: "glvsk@dev",
+  isActive: true,
+  //optional creditcard fetails
+};
+
+myuser2.email = "kiritiNew"; //allowed
+// myuser2._id = "sdf"; //Not Allowed
+
+type CardNumber = {
+  cardnumber: string;
+};
+
+type CardDate = {
+  cardDate: string;
+};
+
+type cardDetails = CardNumber &
+  CardDate & {
+    cvv: number;
+  };
+
 export {};

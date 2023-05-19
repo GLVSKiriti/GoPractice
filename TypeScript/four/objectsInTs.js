@@ -22,3 +22,11 @@ function makeUser(user) {
     return { name: "", email: "", isActive: true };
 }
 makeUser({ name: "", email: "", isActive: true });
+var myuser2 = {
+    _id: "12345",
+    name: "kiriti",
+    email: "glvsk@dev",
+    isActive: true,
+    //optional creditcard fetails
+};
+myuser2.email = "kiritiNew"; //allowed
