@@ -1,4 +1,4 @@
-abstract class TakePhoto {
+abstract class TakePhoto2 {
   constructor(public cameraMode: string, public filter: string) {}
 
   abstract getSepia(): void;
@@ -8,10 +8,10 @@ abstract class TakePhoto {
   }
 }
 
-// const kiri = new TakePhoto("test", "test");
+// const kiri = new TakePhoto2("test", "test");
 //we cant create a object from an abstract class
 
-class Instagram2 extends TakePhoto {
+class Instagram2 extends TakePhoto2 {
   constructor(
     public cameraMode: string,
     public filter: string,
