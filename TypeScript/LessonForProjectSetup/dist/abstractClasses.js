@@ -1,5 +1,5 @@
 "use strict";
-class TakePhoto {
+class TakePhoto2 {
     constructor(cameraMode, filter) {
         this.cameraMode = cameraMode;
         this.filter = filter;
@@ -9,9 +9,9 @@ class TakePhoto {
         return 8;
     }
 }
-// const kiri = new TakePhoto("test", "test");
+// const kiri = new TakePhoto2("test", "test");
 //we cant create a object from an abstract class
-class Instagram2 extends TakePhoto {
+class Instagram2 extends TakePhoto2 {
     constructor(cameraMode, filter, burst) {
         super(cameraMode, filter);
         this.cameraMode = cameraMode;
